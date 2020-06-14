@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import {FormFeedback, Breadcrumb, BreadcrumbItem,Button, Form, FormGroup, Label, Input, Col, Modal, ModalHeader, ModalBody, } from 'reactstrap';
+import {Button, Form, FormGroup, Label, Input, Col, Modal, ModalHeader, ModalBody, } from 'reactstrap';
 import { Row,} from 'reactstrap';
 import { Control, LocalForm, Errors } from 'react-redux-form';
-import { Link } from 'react-router-dom';
-
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !(val) || (val.length <= len);
 const minLength = (len) => (val) => val && (val.length >= len);
